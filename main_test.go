@@ -77,7 +77,7 @@ func (s *MainTestSuite) Test_HelloServer_WritesNokEventually() {
 		RandomErrorServer(w, req)
 	}
 
-	w.AssertCalled(s.T(), "Write", []byte("ERROR: Something, somewhere, went wrong!!\n"))
+	w.AssertCalled(s.T(), "Write", []byte("ERROR: Something, somewhere, went wrong!!!\n"))
 }
 
 // HelloServer
